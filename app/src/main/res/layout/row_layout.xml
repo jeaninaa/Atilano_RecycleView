@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tvCodeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code Name: "
+        android:layout_toRightOf="@+id/ivLogo"/>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCodeName"
+        android:text="Version"
+        android:layout_alignLeft="@id/tvCodeName"/>
+
+    <TextView
+        android:id="@+id/tvAPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API"
+        android:layout_alignBaseline="@+id/tvVersion"
+        android:layout_toRightOf="@+id/tvVersion"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:layout_below="@id/tvVersion"
+        android:layout_alignLeft="@id/tvVersion"/>
+
+</RelativeLayout>
